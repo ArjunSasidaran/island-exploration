@@ -1,5 +1,5 @@
 
-# [A2] Island ca.mcmaster.se2aa4.island.team00.Explorer
+# Island Exploration Mission
 
 - Authors:
   - [Jake, Finlay](finlaj11@mcmaster.ca) 
@@ -10,12 +10,12 @@
 
 This product is an _exploration command center_ for the [Island](https://ace-design.github.io/island/) serious game. 
 
-- The `ca.mcmaster.se2aa4.island.team_XXX_.Explorer` class implements the command center, used to compete with the others. (XXX being the team identifier)
+- The `Explorer` class implements the command center, used to compete with the others.
 - The `Runner` class allows one to run the command center on a specific map.
 
 ### Strategy description
 
-The exploration strategy is for now to stop exploring as soon as we start. We stay safe and fly back to base immediately.
+The exploration strategy is to do an interlaced scan across the map in order to search the map effectively and efficiently. 
 
 ## How to compile, run and deploy
 
@@ -53,8 +53,3 @@ It creates three files in the `outputs` directory:
 - `Explorer_Island.json`: a transcript of the dialogue between the player and the game engine
 - `Explorer.svg`: the map explored by the player, with a fog of war for the tiles that were not visited.
 
-### Deploying the project to the arena
-
-Each week, you'll have to `tag` the version you want to submit for the competition. This version will be used in the weekly run. No tag means no competition.
-
-The tag syntax is `wX`, with `X` the week number. So your product for the first week will be tagged `w1`.
